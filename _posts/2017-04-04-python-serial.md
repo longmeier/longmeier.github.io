@@ -14,9 +14,9 @@ image: cutting.jpg
 首页 http://pyserial.sf.net/
 
 ### 特性
- >* 1. 所有平台使用同样的类接口
+ >* 1.所有平台使用同样的类接口
  >* 2.端口号默认从0开始，程序中不需要知道端口名称
- >* 3. 像文件读写一样的API，read、write（readline等也受支持）
+ >* 3.像文件读写一样的API，read、write（readline等也受支持）
 
 ### 安装
  pip install pyserial
