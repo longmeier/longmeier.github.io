@@ -7,7 +7,7 @@ disqus:
 menu:
 - {name: '个人简介', path: 'menu', url: 'about.html'}
 - {name: '文章', path: 'menu', url: 'writing.html'}
-- {name: '联系me', path: 'menu', url: 'contact.html'}
+- {name: '联系我', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
