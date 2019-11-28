@@ -8,11 +8,11 @@ image: spools.jpg
 ---
 
 ### 一、安装docker
- ``` 
+ 
  yum install -y docker
- ``` 
+ 
 ### 二、拉取mysql镜像
- ``` 
+ 
  docker search mysql  在仓库里面查看mysql镜像版本
 
  docker pull mysql:5.7  拉取自己想要的镜像
@@ -20,7 +20,7 @@ image: spools.jpg
  docker images   查看镜像
     
  * 如果拉取失败，请换成淘宝镜像源
- ``` 
+ 
 ### 三、启动mysql 容器
  ``` 
  * 因为mysql数据库是长期存储，必须挂载到本地目录下面。否则mysql容器停止,mysql数据库就丢失了。
