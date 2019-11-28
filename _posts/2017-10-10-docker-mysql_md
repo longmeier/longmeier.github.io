@@ -52,6 +52,6 @@ image: spools.jpg
   docker update -restart=always dmysql 容器自动启懂
   
   *查看容器 ip
-  
+
   sudo docker inspect –format ‘{{ .NetworkSettings.IPAddress }}’ dmysql
  ``` 
