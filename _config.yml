@@ -20,8 +20,8 @@ permalink:           none
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           'Longmeier'
-description:	       '沙漠之狐'
+title:		           '小饼干'
+description:	       '一屋不扫何以扫天下'
 author:              '史豫川'
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
