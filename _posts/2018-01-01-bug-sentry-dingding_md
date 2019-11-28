@@ -31,4 +31,4 @@ image: cards.jpg
 ### 三、sentry后台启用钉钉通知插件
  ``` 
      * 进入sentry 项目里面找到所有插件 DingDing 启用插件、把access_token 的values 保存进去就行了。
- ``` 
+ ```
