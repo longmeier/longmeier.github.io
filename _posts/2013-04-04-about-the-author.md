@@ -22,20 +22,20 @@ pySerial
  
 ### 快速上手
 
-> 1. 实例化serial对象
+#### 1. 实例化serial对象
  ```   
-        try:
-            ser = serial.Serial(port='com4', baudrate=9600, bytesize=serial.SEVENBITS, parity=serial.PARITY_ODD,
-            stopbits=serial.STOPBITS_ONE)
-            print('串口易打开...')
-            loging('info', '串口已打开')
-        except Exception as e:
-            print('串口打开失败')
-            loging('error', '串口打开失败error:%s' % str(e))
-            
-        * 注意：发送信息这是的是什么参数，接受的时候也设一样的参数进行接收，否则接收过来的数据无法解析。
+  try:
+      ser = serial.Serial(port='com4', baudrate=9600, bytesize=serial.SEVENBITS, parity=serial.PARITY_ODD,
+      stopbits=serial.STOPBITS_ONE)
+      print('串口易打开...')
+      loging('info', '串口已打开')
+  except Exception as e:
+      print('串口打开失败')
+      loging('error', '串口打开失败error:%s' % str(e))
+        
+  * 注意：发送信息这是的是什么参数，接受的时候也设一样的参数进行接收，否则接收过来的数据无法解析。
  ```
- > 2.获取通讯数据
+#### 2.获取通讯数据
   ```
   while ser.isOpen():
       meta = dict()
@@ -51,33 +51,33 @@ pySerial
           time.sleep(1)
           print('end...')
    ```
-> 3.serial 属性和方法
+#### 3.serial 属性和方法
   ```
-      open()                        # 打开端口
+  open()                    # 打开端口
 
-      close()                       # 立即关闭端口
+  close()                   # 立即关闭端口
 
-      setBaudrate(baudrate)         # change baud rate on an open port
+  setBaudrate(baudrate)     # change baud rate on an open port
 
-      inWaiting()                   # return the number of chars in the receive buffer
+  inWaiting()               # return the number of chars in the receive buffer
 
-      read(size=1)                  # read “size” characters
+  read(size=1)              # read “size” characters
 
-      write(s)                      # 把字符串s写到该端口
+  write(s)                  # 把字符串s写到该端口
 
-      flushInput()                  # 清除输入缓存区，放弃所有内容
+  flushInput()              # 清除输入缓存区，放弃所有内容
 
-      flushOutput()                 # 清除输出缓冲区，放弃输出
+  flushOutput()             # 清除输出缓冲区，放弃输出
 
-      sendBreak()                   # 发送中断条件
+  sendBreak()               # 发送中断条件
 
-      setRTS(level=1)               # set RTS line to specified logic level
+  setRTS(level=1)           # set RTS line to specified logic level
 
-      setDTR(level=1)               # set DTR line to specified logic level
+  setDTR(level=1)           # set DTR line to specified logic level
 
-      getCTS()                      # return the state of the CTS line
+  getCTS()                  # return the state of the CTS line
   ```
-> 4.常量
+#### 4.常量
   ```
   parity:
 
@@ -89,5 +89,5 @@ pySerial
 
   bytesize:
 
-        serial.FIVEBITS     serial.SIXBITS     serial.SEVENBITS            serial.EIGHTBITS
+        serial.FIVEBITS、serial.SIXBITS、serial.SEVENBITS、serial.EIGHTBITS
   ```
