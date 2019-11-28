@@ -8,14 +8,15 @@ image: cutting.jpg
 ---
 
 ### 介绍
-pySerial
+**pySerial**
 封装了串口通讯模块，支持linux、windows、Bsd(可能支持所有支持POSIX的操作系统),支持Jython、IconPython
 
 首页 http://pyserial.sf.net/
+
 ### 特性
-####1. 所有平台使用同样的类接口
-####2.端口号默认从0开始，程序中不需要知道端口名称
-####3. 像文件读写一样的API，read、write（readline等也受支持）
+ >* 1. 所有平台使用同样的类接口
+ >* 2.端口号默认从0开始，程序中不需要知道端口名称
+ >* 3. 像文件读写一样的API，read、write（readline等也受支持）
 
 ### 安装
  pip install pyserial
@@ -32,9 +33,9 @@ pySerial
   except Exception as e:
       print('串口打开失败')
       loging('error', '串口打开失败error:%s' % str(e))
-        
-  * 注意：发送信息这是的是什么参数，接受的时候也设一样的参数进行接收，否则接收过来的数据无法解析。
- ```
+  ```
+ >* 注意：发送信息这是的是什么参数，接受的时候也设一样的参数进行接收，否则接收过来的数据无法解析。
+ 
 #### 2.获取通讯数据
   ```
   while ser.isOpen():
@@ -51,8 +52,9 @@ pySerial
           time.sleep(1)
           print('end...')
    ```
+   
 #### 3.serial 属性和方法
-  ```
+  
   open()                    # 打开端口
 
   close()                   # 立即关闭端口
@@ -76,9 +78,9 @@ pySerial
   setDTR(level=1)           # set DTR line to specified logic level
 
   getCTS()                  # return the state of the CTS line
-  ```
+  
 #### 4.常量
-  ```
+  
   parity:
 
         serial.PARITY_NONE   serial.PARITY_EVEN  serial.PARITY_ODD
@@ -90,4 +92,4 @@ pySerial
   bytesize:
 
         serial.FIVEBITS、serial.SIXBITS、serial.SEVENBITS、serial.EIGHTBITS
-  ```
+  
