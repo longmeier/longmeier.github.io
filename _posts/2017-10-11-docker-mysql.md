@@ -11,7 +11,7 @@ image: cutting.jpg
  pySerial
  封装了串口通讯模块，支持linux、windows、Bsd(可能支持所有支持POSIX的操作系统),支持Jython、IconPython
 
-首页 http://pyserial.sf.net/
+ 首页 http://pyserial.sf.net/
 ### 特性
 #### 1. 所有平台使用同样的类接口
 #### 2. 端口号默认从0开始，程序中不需要知道端口名称
